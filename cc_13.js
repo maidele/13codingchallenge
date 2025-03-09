@@ -3,7 +3,7 @@
 
 
 // Creates a new employee card
-function createEmployeeCard( name, position) {
+function employeeCard( name, position) {
     const card = document.createElement ('div');
     card.setAttribute('class', 'employee-card');
  
@@ -29,4 +29,16 @@ function createEmployeeCard( name, position) {
  
  
  }
+
+//Task 3 - 
+function createUpdatedBulk(){
+    //
+    const employeeCard = document.querySelectorAll('.employee-card');
+    
+    //
+    const employeeCardArray = Array.from(employeeCard);//
+
+    employeeCardArray.forEach (card=> {card.style.backgroundColor= 'purple';
+    });
+}
  
