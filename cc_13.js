@@ -3,7 +3,7 @@
 
 
 // Creates a new employee card
-function createEmployeeCard( name, employeePosition) {
+function createEmployeeCard( name, position) {
     const card = document.createElement ('div');
     card.setAttribute('class', 'employee-card');
  
