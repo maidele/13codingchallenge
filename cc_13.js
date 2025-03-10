@@ -26,6 +26,11 @@ function employeeCard( name, position) {
  //
  const editButton = document.createElement('button');
  editButton.textContent = 'edit the card belonging to the employee';
+
+ card.appendChild(heading); // 
+ card.appendChild(paragraph); // 
+ card.appendChild(removeButton); // 
+ card.appendChild(editButton); // 
  
  
  }
@@ -41,4 +46,14 @@ function createUpdatedBulk(){
     employeeCardArray.forEach (card=> {card.style.backgroundColor= 'purple';
     });
 }
- 
+ //Task 4 - 
+     constremoveButton.addEventListener("clicked", (event) => {
+        
+        event.stopPropagation();
+        employeeCard.remove();
+    });
+    
+    //Logging
+    employeeCard.addEventListener("clicked", () => {
+        console.log('Button has been clicked for removal');
+    });
